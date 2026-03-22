@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#2e3132",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "on-secondary-container": "#613400",
+              "tertiary-fixed-dim": "#e9c400",
+              "surface-container-low": "#f3f4f5",
+              "surface": "#f8f9fa",
+              "on-tertiary-container": "#4c3e00",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#544600",
+              "on-primary-fixed": "#001b3c",
+              "background": "#f8f9fa",
+              "tertiary-container": "#c9a900",
+              "secondary-container": "#fd9000",
+              "tertiary": "#705d00",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#e7e8e9",
+              "on-primary-container": "#799dd6",
+              "on-background": "#191c1d",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "outline-variant": "#c3c6d1",
+              "inverse-on-surface": "#f0f1f2",
+              "on-secondary-fixed-variant": "#6c3a00",
+              "on-tertiary-fixed": "#221b00",
+              "surface-bright": "#f8f9fa",
+              "secondary-fixed": "#ffdcc1",
+              "on-primary-fixed-variant": "#1f477b",
+              "outline": "#737780",
+              "inverse-primary": "#a7c8ff",
+              "surface-tint": "#3a5f94",
+              "secondary-fixed-dim": "#ffb778",
+              "primary": "#001e40",
+              "secondary": "#8e4e00",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#d5e3ff",
+              "on-secondary-fixed": "#2e1500",
+              "tertiary-fixed": "#ffe170",
+              "primary-container": "#003366",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#43474f",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "primary-fixed-dim": "#a7c8ff",
+              "surface-variant": "#e1e3e4"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .academic-gradient {
+        background: linear-gradient(135deg, #001e40 0%, #003366 100%);
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8f9fa;
+        color: #191c1d;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+</head>
+<body>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none h-20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<div class="text-2xl font-black tracking-tighter text-sky-900 dark:text-sky-100 uppercase">AYIRAW TECH</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm font-medium" href="#">Home</a>
+<a class="text-sky-900 dark:text-sky-400 font-bold border-b-2 border-amber-600 pb-1 text-sm" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm font-medium" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm font-medium" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden md:block text-sm font-semibold text-sky-900 dark:text-sky-400 hover:bg-slate-50 dark:hover:bg-slate-900/50 px-4 py-2 rounded-xl transition-all duration-300">Book Demo</button>
+<button class="bg-primary academic-gradient text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/10">Enroll Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">Excellence in English Education</span>
+<h1 class="text-5xl md:text-6xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6">
+                        Unlock Your Child's <br/>
+<span class="text-primary-container">Linguistic Potential.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl mb-8 leading-relaxed">
+                        From foundational literacy to sophisticated articulation, our curated curriculum scales with your child's academic journey.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-semibold text-on-surface">Expert Curators</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="text-xs font-semibold text-on-surface">Phonics Based</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-low rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="text-xs font-semibold text-on-surface">Interactive Batches</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-[2rem] overflow-hidden shadow-2xl relative z-10">
+<img alt="Students learning in a modern classroom environment" class="w-full h-full object-cover" data-alt="Students learning in a modern classroom environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfyY3T8uV1wkLi9p6BBNThCRKkq17ZrVn8OGcGWsjpt4ruwHJ01hQh1U3V5UQyOoQQwSqS4rgiyrJG2A2sW7ARqyQuu_il54LgXm9x1xwGoee3Cd-2LHSBBduNL5uuJqu-8b3YTfZSEsbXfoQUBbawNYsKEUn1sgDXjhGOXwVZEf9UmOMZLBPb3aXszpRnHCu2V92dPeWHW2tsMy35Wse1oBOQQ0RfgRKW4VIghqv20_qDiiH_y6-310ZLrXaILKkI_azilDj7pKfW"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-tertiary-fixed p-8 rounded-2xl shadow-xl z-20 max-w-[200px]">
+<p class="text-on-tertiary-fixed font-bold text-2xl">98%</p>
+<p class="text-on-tertiary-fixed-variant text-xs font-medium">Confidence Improvement Rate</p>
+</div>
+<div class="absolute -top-10 -right-4 w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Regular Tuition Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl font-extrabold text-on-surface mb-4">Regular Tuition Program</h2>
+<p class="text-on-surface-variant">Structured learning designed for Standards 1st to 9th. We focus on building a permanent foundation in English language proficiency through a four-pillar approach.</p>
+</div>
+<div class="flex gap-2">
+<span class="px-4 py-2 bg-primary text-on-primary text-xs font-bold rounded-lg uppercase tracking-wider">Annual Enrollment</span>
+</div>
+</div>
+<!-- Bento Grid of Standards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Standard Card 1-3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-14 h-14 bg-primary-fixed flex items-center justify-center rounded-2xl group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-on-primary-fixed group-hover:text-on-primary">child_care</span>
+</div>
+<span class="text-xs font-bold text-outline uppercase tracking-widest">Foundational</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Standards 1st - 3rd</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Phonics &amp; Vocabulary Building</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Interactive Picture Reading</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Basic Grammar Introduction</span>
+</div>
+</div>
+<button class="w-full py-3 border border-outline-variant text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-all active:scale-95">Enroll Now</button>
+</div>
+<!-- Standard Card 4-6 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-14 h-14 bg-primary-fixed flex items-center justify-center rounded-2xl group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-on-primary-fixed group-hover:text-on-primary">menu_book</span>
+</div>
+<span class="text-xs font-bold text-outline uppercase tracking-widest">Intermediate</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Standards 4th - 6th</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Advanced Sentence Construction</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Reading Comprehension &amp; Logic</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Creative Writing Workshops</span>
+</div>
+</div>
+<button class="w-full py-3 border border-outline-variant text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-all active:scale-95">Enroll Now</button>
+</div>
+<!-- Standard Card 7-9 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 group border border-outline-variant/10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-14 h-14 bg-primary-fixed flex items-center justify-center rounded-2xl group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-on-primary-fixed group-hover:text-on-primary">school</span>
+</div>
+<span class="text-xs font-bold text-outline uppercase tracking-widest">Advanced</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Standards 7th - 9th</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Complex Grammar &amp; Synthesis</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Analytical Essay Writing</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="text-sm text-on-surface-variant">Public Speaking &amp; Debate</span>
+</div>
+</div>
+<button class="w-full py-3 border border-outline-variant text-primary font-bold rounded-xl hover:bg-primary hover:text-on-primary transition-all active:scale-95">Enroll Now</button>
+</div>
+</div>
+<!-- Core Pillars Detailed -->
+<div class="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-outline-variant/10 text-center">
+<span class="material-symbols-outlined text-secondary mb-2">spellcheck</span>
+<h4 class="font-bold text-primary text-sm">Grammar</h4>
+<p class="text-[10px] uppercase tracking-tighter text-outline-variant">The Logic of Language</p>
+</div>
+<div class="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-outline-variant/10 text-center">
+<span class="material-symbols-outlined text-secondary mb-2">local_library</span>
+<h4 class="font-bold text-primary text-sm">Reading</h4>
+<p class="text-[10px] uppercase tracking-tighter text-outline-variant">Critical Comprehension</p>
+</div>
+<div class="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-outline-variant/10 text-center">
+<span class="material-symbols-outlined text-secondary mb-2">edit_note</span>
+<h4 class="font-bold text-primary text-sm">Writing</h4>
+<p class="text-[10px] uppercase tracking-tighter text-outline-variant">Creative Expression</p>
+</div>
+<div class="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-outline-variant/10 text-center">
+<span class="material-symbols-outlined text-secondary mb-2">record_voice_over</span>
+<h4 class="font-bold text-primary text-sm">Speaking</h4>
+<p class="text-[10px] uppercase tracking-tighter text-outline-variant">Confident Articulation</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vacation Classes Section -->
+<section class="py-24 max-w-7xl mx-auto px-6 overflow-hidden">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 relative">
+<!-- Layered Image Effect -->
+<div class="relative z-10 w-4/5 aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Happy students engaging in vacation group activities" class="w-full h-full object-cover" data-alt="Happy students engaging in vacation group activities" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnzRfFYT6ErrYkFxMNFZmAL2mL2Y9OGM1Smb5zS8TsBH67W10NQQemxgwC4uqB9hcSQaXNk-3KVhiQgu0gCe-DlQL2N-qa6b3MnYsZU9RJAl1M1PCY6bFLPw2lukmjWV3TaunvJ0_6gVcFNKc1TCWWw3WQg5jZO6FhKakHC_45R0ZhJ-X2yp3K368_LNRyQPXfvFeH9Wfk0o2SwASV3HUtE7iTH3BCWqY6uu3g5q475RKYXC6BhMKeV2GHjIve09DLAXoOmVf39lG0"/>
+</div>
+<div class="absolute -bottom-10 -right-4 z-20 w-3/4 aspect-square rounded-3xl overflow-hidden border-[8px] border-surface-container-lowest shadow-2xl hidden md:block">
+<img alt="Confident children speaking in a group setting" class="w-full h-full object-cover" data-alt="Confident children speaking in a group setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn9s-FUaOyMEPNsIUI74iwJANRGVwOu-MlJruO_ASp4IAnr2nhUeMAG15gdw3WU0wwn8pUBQm6JgJMacM0Y1rRwQ75Bhb1uMeZMWd0eLoFcWlk1M_aPOUhG9haqeJ3QnsYW9LcbqEyTPZ6j_UglUqtrgdVL3m9bNuhp1UPoTfVmIILAhzY1PtqJVy-NHw6Eunju_fAESD2RDmo6Vul8P4s5WZ5E83Uau3HpUUCUhs0ykmMOrYFXcv4B8rZfhG7hOYhav3PYeLB1QQt"/>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed px-3 py-1 rounded-full mb-6">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-sm">celebration</span>
+<span class="text-[10px] font-extrabold text-on-tertiary-fixed uppercase tracking-wider">Summer Specials</span>
+</div>
+<h2 class="text-4xl font-extrabold text-on-surface mb-6 leading-tight">Spoken English <br/>Vacation Classes</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        Transform holidays into a season of growth. Our vacation modules are designed to break language barriers through fun, high-energy activities that build genuine communication confidence.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">theater_comedy</span>
+<div>
+<h4 class="font-bold text-on-surface text-sm">Role-play &amp; Drama</h4>
+<p class="text-xs text-on-surface-variant mt-1">Simulating real-world scenarios to build natural fluency.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">emoji_events</span>
+<div>
+<h4 class="font-bold text-on-surface text-sm">Confidence Boosters</h4>
+<p class="text-xs text-on-surface-variant mt-1">Gamified public speaking sessions in supportive groups.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">diversity_3</span>
+<div>
+<h4 class="font-bold text-on-surface text-sm">Age-Appropriate Groups</h4>
+<p class="text-xs text-on-surface-variant mt-1">Learning with peers for maximum engagement.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary">draw</span>
+<div>
+<h4 class="font-bold text-on-surface text-sm">Creative Storytelling</h4>
+<p class="text-xs text-on-surface-variant mt-1">Using art and narrative to expand expressive vocabulary.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="academic-gradient text-on-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+                            Explore Vacation Batches
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary-fixed/30 transition-colors">
+                            Download Brochure
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-24 bg-primary-container text-on-primary relative overflow-hidden">
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 skew-x-12 transform origin-top translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-20">
+<h2 class="text-3xl font-extrabold mb-4">Investment in Future</h2>
+<p class="text-on-primary-container max-w-xl mx-auto opacity-80">Choose a plan that fits your academic goals. All packages include access to our digital learning resource library.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Basic -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl text-on-surface flex flex-col">
+<h4 class="font-bold text-lg mb-2">Monthly Basic</h4>
+<p class="text-xs text-on-surface-variant mb-6 uppercase tracking-widest font-bold">Standard Support</p>
+<div class="text-4xl font-extrabold mb-8 text-primary">₹3,499<span class="text-sm font-medium text-outline">/mo</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> 3 Classes per week</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Core Grammar &amp; Reading</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Group Sessions</li>
+</ul>
+<button class="w-full py-3 border-2 border-primary-fixed-dim text-primary font-bold rounded-xl hover:bg-primary-fixed-dim transition-colors">Select Plan</button>
+</div>
+<!-- Pro -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl text-on-surface flex flex-col ring-4 ring-secondary-container shadow-2xl transform md:-translate-y-4">
+<div class="bg-secondary-container text-on-secondary-container text-[10px] font-black py-1 px-3 rounded-full self-start mb-4 uppercase tracking-widest">Most Popular</div>
+<h4 class="font-bold text-lg mb-2">Annual Academic</h4>
+<p class="text-xs text-on-surface-variant mb-6 uppercase tracking-widest font-bold">Full Curriculum</p>
+<div class="text-4xl font-extrabold mb-8 text-primary">₹29,999<span class="text-sm font-medium text-outline">/yr</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-2 text-sm font-semibold"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> 5 Classes per week</li>
+<li class="flex items-center gap-2 text-sm font-semibold"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Full 4-Pillar Focus</li>
+<li class="flex items-center gap-2 text-sm font-semibold"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Quarterly Progress Audits</li>
+<li class="flex items-center gap-2 text-sm font-semibold"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> FREE Vacation Batch Access</li>
+</ul>
+<button class="w-full py-4 academic-gradient text-on-primary font-bold rounded-xl shadow-lg shadow-primary/30 transform active:scale-95 transition-all">Enroll Pro</button>
+</div>
+<!-- Intensive -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl text-on-surface flex flex-col">
+<h4 class="font-bold text-lg mb-2">Vacation Intensive</h4>
+<p class="text-xs text-on-surface-variant mb-6 uppercase tracking-widest font-bold">Short Term Focus</p>
+<div class="text-4xl font-extrabold mb-8 text-primary">₹8,999<span class="text-sm font-medium text-outline">/term</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Daily Activity-Based Sessions</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Spoken English Immersion</li>
+<li class="flex items-center gap-2 text-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> Presentation Certification</li>
+</ul>
+<button class="w-full py-3 border-2 border-primary-fixed-dim text-primary font-bold rounded-xl hover:bg-primary-fixed-dim transition-colors">Select Plan</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ CTA -->
+<section class="py-24 max-w-4xl mx-auto px-6 text-center">
+<h3 class="text-2xl font-bold mb-6">Need a custom plan for multiple students?</h3>
+<p class="text-on-surface-variant mb-10">We offer corporate and group discounts for schools and large housing communities.</p>
+<div class="flex justify-center items-center gap-6">
+<a class="text-secondary font-bold hover:underline underline-offset-8 transition-all" href="#">Chat with an Advisor</a>
+<span class="text-outline-variant">|</span>
+<a class="text-secondary font-bold hover:underline underline-offset-8 transition-all" href="#">View All Courses</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-sky-900 dark:text-sky-100 mb-4 uppercase">AYIRAW TECH</div>
+<p class="text-slate-500 dark:text-slate-500 text-xs leading-relaxed">
+                    Pioneering English language excellence through modern academic curation and student-centric pedagogy.
+                </p>
+</div>
+<div>
+<h5 class="font-semibold Manrope text-sky-900 dark:text-sky-400 mb-4 text-sm">Quick Links</h5>
+<ul class="space-y-2">
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity hover:opacity-80" href="#">Privacy Policy</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity hover:opacity-80" href="#">Terms of Service</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity hover:opacity-80" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold Manrope text-sky-900 dark:text-sky-400 mb-4 text-sm">Support</h5>
+<ul class="space-y-2">
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity hover:opacity-80" href="#">FAQ</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity hover:opacity-80" href="#">Student Portal</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity hover:opacity-80" href="#">Academic Calendar</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold Manrope text-sky-900 dark:text-sky-400 mb-4 text-sm">Newsletter</h5>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-lg text-xs py-2 px-3 focus:ring-2 focus:ring-secondary" placeholder="Email Address" type="email"/>
+<button class="absolute right-1 top-1 text-secondary p-1">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-xs text-slate-500">© 2024 AYIRAW TECH LLP. Excellence in English Education.</p>
+</div>
+</footer>
+</body></html>

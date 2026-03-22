@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | AYIRAW TECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#2e3132",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e1e3e4",
+              "surface-container": "#edeeef",
+              "on-secondary-container": "#613400",
+              "tertiary-fixed-dim": "#e9c400",
+              "surface-container-low": "#f3f4f5",
+              "surface": "#f8f9fa",
+              "on-tertiary-container": "#4c3e00",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#544600",
+              "on-primary-fixed": "#001b3c",
+              "background": "#f8f9fa",
+              "tertiary-container": "#c9a900",
+              "secondary-container": "#fd9000",
+              "tertiary": "#705d00",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#e7e8e9",
+              "on-primary-container": "#799dd6",
+              "on-background": "#191c1d",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "outline-variant": "#c3c6d1",
+              "inverse-on-surface": "#f0f1f2",
+              "on-secondary-fixed-variant": "#6c3a00",
+              "on-tertiary-fixed": "#221b00",
+              "surface-bright": "#f8f9fa",
+              "secondary-fixed": "#ffdcc1",
+              "on-primary-fixed-variant": "#1f477b",
+              "outline": "#737780",
+              "inverse-primary": "#a7c8ff",
+              "surface-tint": "#3a5f94",
+              "secondary-fixed-dim": "#ffb778",
+              "primary": "#001e40",
+              "secondary": "#8e4e00",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#d5e3ff",
+              "on-secondary-fixed": "#2e1500",
+              "tertiary-fixed": "#ffe170",
+              "primary-container": "#003366",
+              "on-surface": "#191c1d",
+              "on-surface-variant": "#43474f",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#d9dadb",
+              "primary-fixed-dim": "#a7c8ff",
+              "surface-variant": "#e1e3e4"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #001e40 0%, #003366 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none h-20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<div class="text-2xl font-black tracking-tighter text-sky-900 dark:text-sky-100 uppercase">
+                AYIRAW TECH
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors font-body text-sm" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors font-body text-sm" href="#">Courses</a>
+<a class="text-sky-900 dark:text-sky-400 font-bold border-b-2 border-amber-600 pb-1 font-body text-sm" href="#">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors font-body text-sm" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block text-on-primary-fixed-variant font-semibold text-sm hover:opacity-80 transition-opacity">Book Demo</button>
+<button class="bg-primary editorial-gradient text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm scale-95 active:scale-90 transition-transform shadow-lg shadow-primary/20">Enroll Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Editorial Style -->
+<section class="relative py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label text-xs font-bold tracking-widest uppercase mb-6">Our Legacy</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                        Architecting <span class="text-secondary italic">Fluency</span> for the Global Stage.
+                    </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
+                        AYIRAW TECH LLP is not just an English academy. We are a premier curation of linguistic excellence designed for the modern professional and the aspiring scholar.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-full object-cover" data-alt="University students collaborating in a modern library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSaGqWgdVyLtO7yjKzXczBSH-cb7VfGZ87Fiu_NlIyRxnzbBIlo6hzDCx2LxLqendEh8Mci8X_IW5jLuUcWhxUip016YukJAOQ-pjtDsBF1zkZ8gOG6palUZyy_PTw3w8dGV54bj0xq1v0EIpwf1oMYKhIVL3YmdJjNXe0rabKIpjGInOrV68iyHsr-9tiPFL0VXfLN1Y8D-wRmNubo8zP8W6T6vcv44nmW5rRu3ZY7gFgxBtNwcDqO1qfj2fbx2RP2ijqIfMEEyw0"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-8 rounded-xl shadow-xl max-w-[240px] border border-outline-variant/15">
+<p class="font-headline font-bold text-4xl text-primary">15k+</p>
+<p class="text-sm text-outline font-label">Scholars Mentored Worldwide</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Story: Asymmetrical Layout -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div class="sticky top-32">
+<h2 class="font-headline text-4xl font-bold mb-8">Our Story: A Commitment to English Excellence</h2>
+<div class="space-y-6 text-on-surface-variant leading-loose">
+<p>Founded at the intersection of traditional pedagogy and digital innovation, AYIRAW TECH LLP was born from a singular observation: the world speaks English, but the classroom often fails to teach the language of the world.</p>
+<p>We began as a small cohort of linguists dedicated to breaking the cycle of rote memorization. Today, we stand as a global beacon for those seeking not just to speak, but to command the English language with nuance and authority.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/15 hover:shadow-lg transition-shadow">
+<div class="text-secondary mb-6"><span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">history_edu</span></div>
+<h3 class="font-headline text-2xl font-bold mb-4">The Genesis</h3>
+<p class="text-on-surface-variant text-sm">Starting in 2018, we reimagined English curriculum to mirror the dynamics of international business and high-level academia.</p>
+</div>
+<div class="bg-primary editorial-gradient p-10 rounded-xl text-on-primary shadow-xl">
+<div class="text-tertiary-fixed mb-6"><span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span></div>
+<h3 class="font-headline text-2xl font-bold mb-4">Unwavering Standards</h3>
+<p class="opacity-80 text-sm">Every module we curate undergoes rigorous peer review by native linguistic experts and industry veterans.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision: Tonal Cards -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group">
+<div class="h-2 w-24 bg-secondary mb-8 transition-all group-hover:w-full duration-500"></div>
+<h3 class="font-headline text-3xl font-bold mb-6">The Mission</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">To empower global citizens with the linguistic tools necessary to navigate complex international landscapes with confidence, precision, and cultural intelligence.</p>
+</div>
+<div class="group">
+<div class="h-2 w-24 bg-primary mb-8 transition-all group-hover:w-full duration-500"></div>
+<h3 class="font-headline text-3xl font-bold mb-6">The Vision</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">To become the world's most trusted digital curator for high-stakes English education, where technology and human expertise converge perfectly.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founders & Tutors: Academic Cards -->
+<section class="py-24 bg-surface-container-high">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-secondary font-bold tracking-widest text-xs uppercase font-label">The Faculty</span>
+<h2 class="font-headline text-4xl font-bold mt-2">Meet Our Mentors</h2>
+</div>
+<p class="text-outline max-w-sm text-sm">Guided by educators from Ivy League backgrounds and industry specialists.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Founder Card -->
+<div class="flex flex-col">
+<div class="bg-surface-container-highest h-12 w-4/5 rounded-t-xl ml-auto flex items-center px-6">
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant">Director &amp; Founder</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl rounded-tr-none shadow-sm flex-grow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A professional man in a navy suit representing a founder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH7J6aFg28EJ7HBGE7VY9vhFo7cOIPoGEYObit9PBGaqg1idfq7onrUM1vSDrTQwT7ZS30FmIbpq-wfO4CR3mM6WfZLxaVa33bQxOspTAsU4CYm0SxWOV1ooCPeVQSGThlJOLneCr8ipTkEJawy00aaM93rZrIe1m-TgsUGmlCr0YOjVJEKETjxLq_QCqJ4qjyYYKhz7jhST9945ZtqcTgCW5DGXgjwDCnKGDPqeA1q16vkCRRc6secAeW9MoFqbGuu1mWw_XGzdzR"/>
+</div>
+<h4 class="font-headline text-xl font-bold">Dr. Alistair Ayiraw</h4>
+<p class="text-secondary font-label text-xs font-bold mb-4">PhD Applied Linguistics</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">With 20 years of experience in international education, Alistair leads the pedagogical strategy of the firm.</p>
+</div>
+</div>
+<!-- Tutor Card 1 -->
+<div class="flex flex-col">
+<div class="bg-surface-container-highest h-12 w-4/5 rounded-t-xl ml-auto flex items-center px-6">
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant">Head of Business English</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl rounded-tr-none shadow-sm flex-grow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A professional woman in business attire representing a lead tutor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqPScwz-iXjJy_CO0xh7A6ZVxfKTJoCqmxvHHCZghrSYoD_RlIAklKVFlVUDAdFikCAU_6pudrsl2MViSyR5WLBUv8Cb6TgRdhNf2JP6rQ9KdSuEeJZ7KiqDngPK30B6ZRsCOxBy566XOm6zLn_MoAojAZtTxIK0eAkJGYmKoU3O4Jv1p9w-TyJG6bI5W20h6bCEBMijjfbSKBsjucvBoxk7sdpK-7HDZuyNTwzdsBg-nLHMDu5TR3nOsURVgO_Ml4g52ZxJTIVAx4"/>
+</div>
+<h4 class="font-headline text-xl font-bold">Sarah Jenkins</h4>
+<p class="text-secondary font-label text-xs font-bold mb-4">Corporate Communications Expert</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Specializing in high-stakes negotiation English and boardroom rhetoric for executive leaders.</p>
+</div>
+</div>
+<!-- Tutor Card 2 -->
+<div class="flex flex-col">
+<div class="bg-surface-container-highest h-12 w-4/5 rounded-t-xl ml-auto flex items-center px-6">
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant">IELTS/TOEFL Lead</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl rounded-tr-none shadow-sm flex-grow">
+<div class="aspect-square rounded-lg overflow-hidden mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="A young male tutor in professional casual wear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVgVSryj-7x584s_gbUYvgUWgZRrV_as2Hgqs7ptzI3GDr6cg5OWKlKYqVYUTRXymhU-d_xcykWuOZzOdWs6YjxU-1VFpOFNhp3iAmVsBiTMTqQdyZuo-Ql7yWyKiXuozEF3tauADc2sKR_weXOvZ6i1oqr9399NJ_WaEzrQR0wOyawOib8H4itrFi7PiOhfTWR_Zt-beJHayCHPrIPti4hj8II2jRNYdBRhnyzox6KkDaKv-9wtd1WZ3BkjMODVYKhgl3Ox9ptj4T"/>
+</div>
+<h4 class="font-headline text-xl font-bold">Jameson Thorne</h4>
+<p class="text-secondary font-label text-xs font-bold mb-4">TESOL Certified Master</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Jameson has helped over 2,000 students achieve Band 8.5+ through his proprietary 'Flow Method'.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic Philosophy: Beyond the Classroom -->
+<section class="py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="editorial-gradient rounded-3xl p-12 md:p-20 text-on-primary relative">
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">language</span>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-headline text-3xl md:text-5xl font-bold mb-8 leading-tight">Beyond the Classroom: Real-world English Proficiency</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
+<div>
+<h4 class="text-tertiary-fixed font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">psychology</span> The Neural Approach
+                                </h4>
+<p class="text-primary-fixed text-sm leading-relaxed">We focus on cognitive linguistic development—teaching you how to think in English, rather than just translating your native thoughts.</p>
+</div>
+<div>
+<h4 class="text-tertiary-fixed font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined">forum</span> Cultural Immersion
+                                </h4>
+<p class="text-primary-fixed text-sm leading-relaxed">Our curriculum includes socio-cultural nuances, ensuring you never sound technically correct but socially awkward in international settings.</p>
+</div>
+</div>
+<button class="mt-12 bg-secondary text-on-primary px-8 py-4 rounded-xl font-bold hover:bg-secondary-container transition-colors shadow-xl shadow-black/20">Read Whitepaper</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Student Gallery: Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold mb-4">A Vibrant Learning Community</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Experience the energy of AYIRAW TECH through the eyes of our global student body.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A diverse group of students discussing around a laptop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1Jlp_JdX0Px4Q-EfL9niA3R-lhc6Eoonx1sTrz71Gjf6t5l88ax3BjG9uyDQAhQU2fw2f-VN_q_MszJjQopiqq7aJyY9_E0zA9BQYOxKSIvYGXJ8VJ1q1o96lJNxl4DQmFkTNVwJg5vSDk2aIviKmMVMTm5920tYJg5skAaOZm2kOmWcHA5Bd1htOwm7uUdCfLoKDlsqf7vu3w_8LuuukAMHsnVBfVNiKjOkCcKM5Pm10dT6MgjBxzA2deM2JLyiGxxHJhxd0aLK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+<p class="text-white text-sm font-label">Interactive Workshop, Q3 2023</p>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close up of a student writing in a journal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmg6Qzh9UJ9_X9wGPK9DAOyyCrwRoTAuklNqgjnAV8Bx3zdmH_aei3ZWbRmZJndzqSh5G_-9qSxb4FKkXcNsZwPu1xUuz-Uc5x4ThUEiZCxLKp4w7Q3UBz6g_c0yR0mpj9U4A7Ljdrwgs-S_3FIiY0nxd8ikNLm4S4l34E3e8LLA89OKDLpTkzrvtHnBe4-uMs3k-msc5jNZqMjEQgNSC1XHtwIKGxjHMIVR1rfs90PCnQX9Qj-slEnYj6pP0cMdieNenMmGhykuF2"/>
+</div>
+<div class="rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Two students high-fiving in a modern classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEz0a9IWtWTUEYJYQxkiyv-De_RrmxX7FToFYg8AHt9Lbl5YoclwFNe9R6CPoKukk0yuqsyMh28FP65E7-DvNMeYtwJ24a-dQ6lD7qFXowvFWCz52U_-c-eOL01yGaE9rVr6F_LgVJl7g-uMKAvSs-58FOZgAsrpq9m5I5L1ZHqOiECsKO0l-A3LHzu7d4jjHvfqDq-D7Lxinil_scu4wDjh-y7U1O-S418hhzXW9bK5SrXckdmp2vxA_bmJTL-I9Ib-ZUn2ThOpik"/>
+</div>
+<div class="md:col-span-2 rounded-xl overflow-hidden group relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide shot of a tech-enabled lecture hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQJ0jAhZ1QSi3tnvNVQqnr79EX7e3AkZY1DUXsi8IFBoGU9Nj41oVntl1HycNB3CN_fgQbuTEFIHdxr6VKIggDCI3uAkk5qjtHZuASP9iRuGvQ4S7mBX4uJ7d_Vkt7alZduUJ1eWO0yKfcIBzq5CkaQILww2voclQNtJj-E6sMcucEIlUGfwQP3JqSDTewuL9JxYeM5WVgTyNNtB83Dp7mtiAJi2PL1i_dhsKKzJoGBHxRz11rYvnXJQrUw8kHzZbqqnJ18oZcLtEr"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-sky-900 dark:text-sky-100 mb-4 uppercase">AYIRAW TECH</div>
+<p class="text-xs text-slate-500 leading-relaxed font-body">Pioneering the next generation of English education through technological integration and human-centric pedagogy.</p>
+</div>
+<div>
+<h5 class="font-headline font-semibold text-sky-900 dark:text-sky-400 mb-4 text-sm">Quick Links</h5>
+<ul class="space-y-2">
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">Home</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">Courses</a></li>
+<li><a class="text-xs text-amber-700 dark:text-amber-400 font-body" href="#">About Us</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-semibold text-sky-900 dark:text-sky-400 mb-4 text-sm">Resources</h5>
+<ul class="space-y-2">
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">Privacy Policy</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">Terms of Service</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">FAQ</a></li>
+<li><a class="text-xs text-slate-500 hover:underline decoration-amber-500 underline-offset-4 transition-opacity font-body" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-semibold text-sky-900 dark:text-sky-400 mb-4 text-sm">Newsletter</h5>
+<p class="text-xs text-slate-500 mb-4">Join 5,000+ subscribers for weekly English tips.</p>
+<div class="flex">
+<input class="bg-surface-container-low border-none rounded-l-xl text-xs w-full focus:ring-2 focus:ring-secondary" placeholder="Email" type="email"/>
+<button class="bg-primary text-on-primary px-4 rounded-r-xl font-bold text-xs">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 pt-12 text-center">
+<p class="text-[10px] text-slate-400 font-body uppercase tracking-widest">© 2024 AYIRAW TECH LLP. Excellence in English Education.</p>
+</div>
+</footer>
+</body></html>

@@ -82,6 +82,10 @@
       }
     </style>
 </head>
+   
+
+     
+</script>
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 <!-- TopNavBar -->
 <header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
@@ -89,12 +93,13 @@
 <div class="text-2xl font-black tracking-tighter text-sky-900 dark:text-sky-100 font-headline">AYIRAW TECH</div>
 
        <!-- ✅ Mobile Button (NEW) -->
-  <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+  <button class="md:hidden text-2xl" onclick="toggleMenu()"><span class="material-symbols-outlined">menu</span></button>
+      
 
   <!-- ✅ Desktop Menu (KEEP THIS) -->
   <div class="hidden md:flex items-center space-x-6">
     
-   </div>
+   
 <a class="text-sky-900 dark:text-sky-400 font-bold border-b-2 border-amber-600 pb-1 text-sm transition-all" href="index.html">Home</a>
 <a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm" href="courses.html">Courses</a>
 <a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm" href="about.html">About Us</a>
@@ -106,6 +111,15 @@
 </div>
 </nav>
 </header>
+      
+
+<!-- ✅ ADD THIS -->
+<div id="mobileMenu" class="hidden flex-col space-y-4 p-4 bg-white text-center shadow-md md:hidden">
+  <a href="index.html" class="block py-2 border-b">Home</a>
+  <a href="courses.html" class="block py-2 border-b">Courses</a>
+  <a href="about.html" class="block py-2 border-b">About Us</a>
+  <a href="contact.html" class="block py-2">Contact</a>
+</div>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface py-24">
@@ -389,4 +403,10 @@
 </div>
 </div>
 </footer>
+      <script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 </body></html>

@@ -92,12 +92,12 @@
 <div class="text-2xl font-black tracking-tighter text-sky-900 dark:text-sky-100 font-headline">AYIRAW TECH</div>
 
        <!-- ✅ Mobile Button (NEW) -->
-  <button class="md:hidden text-2xl" onclick="toggleMenu()">☰</button>
+  <button class="md:hidden text-2xl" onclick="toggleMenu()"><span class="material-symbols-outlined">menu</span></button>
 
   <!-- ✅ Desktop Menu (KEEP THIS) -->
   <div class="hidden md:flex items-center space-x-6">
     
-   </div>
+   
 <a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm font-medium" href="index.html">Home</a>
 <a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm font-medium" href="courses.html">Courses</a>
 <a class="text-slate-600 dark:text-slate-400 hover:text-sky-900 dark:hover:text-sky-200 transition-colors text-sm font-medium" href="about.html">About Us</a>
@@ -109,6 +109,7 @@
 </div>
 </div>
 </nav>
+      
 <main class="pt-32 pb-24">
 <!-- Hero Section -->
 <section class="max-w-7xl mx-auto px-6 mb-24">
@@ -339,4 +340,10 @@
 <p class="text-xs text-slate-500 text-center">© 2024 AYIRAW TECH LLP. Excellence in English Education.</p>
 </div>
 </footer>
+      <script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+}
+</script>
 </body></html>
